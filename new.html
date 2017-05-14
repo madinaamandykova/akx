@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adapt</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<a float="right" href="index.html">Log out and back to the main page</a>
+<style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>Aktobe via Google Maps</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC034-3eSTRYE54DAuu2OaiaEfJUTX7hFQ&callback=initMap">
+    </script>
+
+<table>
+ <tr>
+  <td>
+   <img src="44.jpg" height="200" width="200">
+  </td>
+  <td>
+   <img src="6.jpg" height="200" width="200">
+  </td>
+  <td>
+   <img src="5.jpg" height="200" width="200">
+  </td>
+  <td>
+   <p><font color="#FF4500">This map allows you to adapt to the city quickly!Find the places below in the map,so you can find them easily!The photos provide the best sights of Aktobe!</font></p>
+   <p><font color="#4B0082">1.Әбілайыр хан даңғылы<font></p>
+   <p><font color="#800000">2.Парк им.Первого Президента</font></p>
+   <p><font color="#000080">3.Седьмое Небо</font></p>
+  </td></tr>
+  </table>
+
+
+  </body>
+</html>
+
+ 
